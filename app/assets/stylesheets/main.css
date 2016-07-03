@@ -279,7 +279,7 @@ a:after {
 	background-position: center center;
 	min-height: 650px;
 	width: 100%;
-	
+
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -299,16 +299,18 @@ a:after {
 	font-size: 100px;
 	font-weight: bold;
 	text-shadow: 2px 2px 2px #000;
+    height: 100px;
 }
 
 #headerwrap p {
 	color:#ffffff;
-	font-size: 40px;
+	font-size: 70px;
 	font-weight: 400;
 	text-align: center;
 	line-height: 40px;
 	letter-spacing: 3px;
 	margin-left: 15px;
+    margin-top: 50px;
 	text-shadow: 1px 1px 1px #000;
 }
 
@@ -336,6 +338,10 @@ a:after {
 	font-size: 60px;
 	line-height: 30px;
 	margin-bottom: 10px;
+}
+
+#contact{
+    padding-bottom: 25px;
 }
 
 #footerwrap {
@@ -393,7 +399,7 @@ a:after {
     background-size: cover;
 
     background-attachment: relative;
-    
+
     text-align: center;
 }
 
@@ -516,7 +522,6 @@ a:after {
 	font-weight: 700;
 	text-align: left;
 	letter-spacing: 2px;
-	
 }
 
 .grid figcaption a {
