@@ -1,0 +1,80 @@
+.wrap{
+overflow: hidden;
+}
+
+.gc_wrapper {
+  max-width: 800px;
+  min-width: 300px;
+  margin: 2.0833% auto;
+}
+
+.responsive-iframe-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+.responsive-iframe-container iframe,
+.responsive-iframe-container object,
+.responsive-iframe-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 600px) {
+    .big-container {
+        display: none;
+    }
+    .small-container {
+       padding-bottom: 200%;   /* 高さ */
+    }
+}
+@media (min-width: 600px) {
+    .small-container {
+        display: none;
+    }
+}
+
+@media (min-width: 600px) {
+    .map-small-container {
+        display: none;
+    }
+}
+
+.booking_form{
+  max-width:900px;
+  margin:0 auto;
+  padding:30px;
+}
+
+#top_contact{
+  padding-top:0;
+}
+
+@media (max-width: 1200px){
+  .contact_info{
+      width: 70%;
+      margin: 0 auto 50px;
+      text-align:center;
+  }
+  #top_contact{
+      width:60%;
+      padding:0;
+  }
+}
+
+@media (max-width: 900px){
+  #top_contact{
+      width:95%;
+  }
+}
+
+@media (max-width: 1200px){
+  .hiring_box{
+      margin: 0 auto;
+  }
+}

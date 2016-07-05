@@ -10,7 +10,7 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li> <a href="#home" class="smoothScroll"> Home</a></li>
+            <li> <%= link_to 'Home', root_path, class: "smoothScroll" %></li>
             <li> <a href="#about" class="smoothScroll"> About</a></li>
             <li> <%= link_to 'Rooms/Booking', bookings_path, class: "smoothScroll" %></li>
             <li> <a href="#team" class="smoothScroll"> Team</a></li>
@@ -122,8 +122,8 @@
 		<div id="greywrap">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-6 centered">
-						<img class="img-responsive" src="assets/hiring.jpg" align="">
+					<div class="col-lg-6">
+						<img class="img-responsive hiring_box" src="assets/hiring.jpg" align="">
 					</div>
 					<div class="col-lg-6">
 						<h2>We Are Hiring!</h2>
@@ -151,7 +151,7 @@
 				<div class="col-lg-6 blog-bg">
 					<div class="col-lg-4 centered">
 					<br>
-						<p><img class="img img-circle" src="assets/team04.jpg" width="60px" height="60px"></p>
+						<p><img class="img img-circle" src="assets/masa.jpg" width="60px" height="60px"></p>
 						<h4>Jaye Smith</h4>
 						<h5>Published Aug 30.</h5>
 					</div>
@@ -167,7 +167,7 @@
 				<div class="col-lg-6 blog-bg">
 					<div class="col-lg-4 centered">
 					<br>
-						<p><img class="img img-circle" src="assets/team03.jpg" width="60px" height="60px"></p>
+						<p><img class="img img-circle" src="assets/aleks.png" width="60px" height="60px"></p>
 						<h4>Michele Lampa</h4>
 						<h5>Published Aug 28.</h5>
 					</div>
@@ -186,12 +186,17 @@
 
 		<!-- ==== SECTION DIVIDER6 ==== -->
 		<section class="section-divider textdivider divider6" id="access" >
-			<div class="container">
+			<div class="container gc_wrapper">
 				<h1>Access</h1>
 				<hr>
 				<p>2 Chome-31-6 Kamijujo, Kita-ku, Tokyo 114-0034</p>
 				<p>+34 9884 4893</p>
+        <div class="responsive-iframe-container big-container">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1618.786125967292!2d139.7215038294065!3d35.76131699999998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601892f29f31687f%3A0x37903b67e14be793!2z5pel5pysLCDjgJIxMTQtMDAzNCDmnbHkuqzpg73ljJfljLrkuIrljYHmnaHvvJLkuIHnm67vvJPvvJHiiJLvvJY!5e0!3m2!1sja!2sjp!4v1467532924530" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="responsive-iframe-container map-small-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1618.786125967292!2d139.7215038294065!3d35.76131699999998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601892f29f31687f%3A0x37903b67e14be793!2z5pel5pysLCDjgJIxMTQtMDAzNCDmnbHkuqzpg73ljJfljLrkuIrljYHmnaHvvJLkuIHnm67vvJPvvJHiiJLvvJY!5e0!3m2!1sja!2sjp!4v1467532924530" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
 			</div><!-- container -->
 		</section><!-- section -->
 
@@ -203,7 +208,7 @@
 				<br>
 				<br>
 
-        <div class="col-lg-6">
+        <div class="col-lg-6 contact_info">
 					<h3>Contact Information</h3>
 					<p>
             <span class="icon icon-home"></span> 2 Chome-31-6 Kamijujo, Kita-ku, Tokyo 114-0034<br/>
@@ -215,7 +220,7 @@
 					</p>
 				</div><!-- col -->
 
-        <div class="col-lg-6 booking_form" id="right-contact-box">
+        <div class="col-lg-6 booking_form" id="top_contact">
           <h1 class="centered">お問い合わせ</h1>
           <%= form_for @booking, :url => bookings_confirm_path do |f| %>
             <% if @booking.errors.any? %>
