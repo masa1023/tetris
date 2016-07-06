@@ -26,9 +26,9 @@
 <!-- ==== SECTION DIVIDER3 -->
 <section class="section-divider textdivider divider3">
   <div class="container">
-    <h1>DESIGN SOLVE PROBLEMS</h1>
+    <h1>Our Rooms</h1>
     <hr>
-    <p>From the purely practical to the richly philosophical, design is the solution to a host of challenges.</p>
+    <p>Tetrisのお部屋を紹介します。</p>
   </div><!-- container -->
 </section><!-- section -->
 
@@ -37,7 +37,7 @@
   <br>
   <div class="row">
     <br>
-    <h1 class="centered">Rooms</h1>
+    <h1 class="centered">Beds</h1>
     <hr>
     <br>
     <br>
@@ -224,8 +224,8 @@
         <td><%= f.text_field :period %></td>
       </tr>
       <tr>
-        <th>内見希望日</th>
-        <td><%= f.date_field :preview_date %></td>
+        <th>内見希望日時</th>
+        <td><%= f.datetime_local_field :preview_date %></td>
       </tr>
       <tr>
         <th>お問い合わせ内容</th>
