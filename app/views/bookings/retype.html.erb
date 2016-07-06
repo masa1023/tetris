@@ -1,0 +1,85 @@
+<div id="navbar-main">
+  <!-- Fixed navbar -->
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon icon-shield" style="font-size:30px; color:#3498db;"></span>
+        </button>
+        <a class="navbar-brand hidden-xs hidden-sm" href="#home"><span class="icon icon-shield" style="font-size:18px; color:#3498db;"></span></a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li> <%= link_to 'Home', root_path, class: "smoothScroll" %></li>
+          <li> <a href="/#about" class="smoothScroll"> About</a></li>
+          <li> <%= link_to 'Rooms/Booking', bookings_path, class: "smoothScroll" %></li>
+          <li> <a href="/#team" class="smoothScroll"> Team</a></li>
+          <li> <a href="/#blog" class="smoothScroll"> Reviews</a></li>
+          <li> <a href="/#access" class="smoothScroll"> Access</a></li>
+          <li> <a href="http://ameblo.jp/takknnjp/entry-12167348798.html" class="smoothScroll" target="_blank"> Blog</a></li>
+          <li> <a href="/#contact" class="smoothScroll"> Contact</a></li>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+</div>
+
+<div class="container booking_form retype_page">
+  <h1 class="centered">Contact</h1>
+  <hr>
+  <br>
+  <%= form_for @booking, :url => bookings_confirm_path do |f| %>
+    <% if @booking.errors.any? %>
+      <div class="alert alert-danger" role="alert">
+        <strong>入力内容にエラーがあります</strong>
+        <ul>
+          <% @booking.errors.each do |attr, msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+    <table class="table">
+      <tr>
+        <th>名前<span class="text-danger">（必須）</span></th>
+        <td><%= f.text_field :name %></td>
+      </tr>
+      <tr>
+        <th>メールアドレス<span class="text-danger">（必須）</span></th>
+        <td><%= f.text_field :email %></td>
+      </tr>
+      <tr>
+        <th>年齢<span class="text-danger">（必須）</span></th>
+        <td><%= f.text_field :age %></td>
+      </tr>
+      <tr>
+        <th>性別<span class="text-danger">（必須）</span></th>
+        <td><%= f.text_field :sex %></td>
+      </tr>
+        <tr>
+        <th>国籍<span class="text-danger">（必須）</span></th>
+        <td><%= f.text_field :nationality %></td>
+      </tr>
+      <tr>
+        <th>希望ベッドタイプ</th>
+        <td><%= f.text_field :bed_type, :placeholder => "A~Dタイプから選択 " %></td>
+      </tr>
+      <tr>
+        <th>入居希望日</th>
+        <td><%= f.text_field :checkin_date %></td>
+      </tr>
+      <tr>
+        <th>予定入居期間</th>
+        <td><%= f.text_field :period %></td>
+      </tr>
+      <tr>
+        <th>内見希望日</th>
+        <td><%= f.text_field :preview_date %></td>
+      </tr>
+      <tr>
+        <th>お問い合わせ内容</th>
+        <td><%= f.text_area :message %></td>
+      </tr>
+    </table>
+    <%= f.submit '確認', class: 'btn btn-primary' %>
+  <% end %>
+</div>

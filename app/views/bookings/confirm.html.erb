@@ -24,85 +24,87 @@
 </div>
 
 <div class="container">
+  <div class="confirm_wrapper">
 
-  <div class="page-header">
-    <h1>お問い合わせ内容をご確認ください</h1>
+    <div class="page-header">
+      <h1>お問い合わせ内容をご確認ください</h1>
+    </div>
+
+    <%= form_for @booking, :url => bookings_thanks_path do |f| %>
+      <table class="table">
+        <tr>
+          <th>名前</th>
+          <td>
+            <%= f.hidden_field :name %>
+            <%= @booking.name %>
+          </td>
+        </tr>
+        <tr>
+          <th>メールアドレス</th>
+          <td>
+            <%= f.hidden_field :email %>
+            <%= @booking.email %>
+          </td>
+        </tr>
+        <tr>
+          <th>年齢</th>
+          <td>
+            <%= f.hidden_field :age %>
+            <%= @booking.age %>
+          </td>
+        </tr>
+        <tr>
+          <th>性別</th>
+          <td>
+            <%= f.hidden_field :sex %>
+            <%= @booking.sex %>
+          </td>
+        </tr>
+        <tr>
+          <th>国籍</th>
+          <td>
+            <%= f.hidden_field :nationality %>
+            <%= @booking.nationality %>
+          </td>
+        </tr>
+        <tr>
+          <th>希望ベッドタイプ</th>
+          <td>
+            <%= f.hidden_field :bed_type %>
+            <%= @booking.bed_type %>
+          </td>
+        </tr>
+        <tr>
+          <th>入居希望日</th>
+          <td>
+            <%= f.hidden_field :checkin_date %>
+            <%= @booking.checkin_date %>
+          </td>
+        </tr>
+        <tr>
+          <th>入居期間</th>
+          <td>
+            <%= f.hidden_field :period %>
+            <%= @booking.period %>
+          </td>
+        </tr>
+        <tr>
+          <th>内見希望日</th>
+          <td>
+            <%= f.hidden_field :preview_date %>
+            <%= @booking.preview_date %>
+          </td>
+        </tr>
+        <tr>
+          <th>お問い合わせ内容</th>
+          <td>
+            <%= f.hidden_field :message %>
+            <%= simple_format @booking.message %>
+          </td>
+        </tr>
+      </table>
+      <%= f.submit '送信', :class => 'btn btn-primary' %>
+    <% end %>
+
   </div>
-
-  <%= form_for @booking, :url => bookings_thanks_path do |f| %>
-    <table class="table">
-      <tr>
-        <th>名前</th>
-        <td>
-          <%= f.hidden_field :name %>
-          <%= @booking.name %>
-        </td>
-      </tr>
-      <tr>
-        <th>メールアドレス</th>
-        <td>
-          <%= f.hidden_field :email %>
-          <%= @booking.email %>
-        </td>
-      </tr>
-      <tr>
-        <th>年齢</th>
-        <td>
-          <%= f.hidden_field :age %>
-          <%= @booking.age %>
-        </td>
-      </tr>
-      <tr>
-        <th>性別</th>
-        <td>
-          <%= f.hidden_field :sex %>
-          <%= @booking.sex %>
-        </td>
-      </tr>
-      <tr>
-        <th>国籍</th>
-        <td>
-          <%= f.hidden_field :nationality %>
-          <%= @booking.nationality %>
-        </td>
-      </tr>
-      <tr>
-        <th>希望ベッドタイプ</th>
-        <td>
-          <%= f.hidden_field :bed_type %>
-          <%= @booking.bed_type %>
-        </td>
-      </tr>
-      <tr>
-        <th>入居希望日</th>
-        <td>
-          <%= f.hidden_field :checkin_date %>
-          <%= @booking.checkin_date %>
-        </td>
-      </tr>
-      <tr>
-        <th>入居期間</th>
-        <td>
-          <%= f.hidden_field :period %>
-          <%= @booking.period %>
-        </td>
-      </tr>
-      <tr>
-        <th>内見希望日</th>
-        <td>
-          <%= f.hidden_field :preview_date %>
-          <%= @booking.preview_date %>
-        </td>
-      </tr>
-      <tr>
-        <th>お問い合わせ内容</th>
-        <td>
-          <%= f.hidden_field :message %>
-          <%= simple_format @booking.message %>
-        </td>
-      </tr>
-    </table>
-    <%= f.submit '送信', :class => 'btn btn-primary' %>
-  <% end %>
-
 </div>

@@ -1,4 +1,5 @@
 class BookingsController < ApplicationController
+
   def index
     # 入力画面を表示
     @booking = Booking.new
@@ -13,7 +14,7 @@ class BookingsController < ApplicationController
       render :action => 'confirm'
     else
       # NG。入力画面を再表示
-      render :action => 'index'
+      render :action => 'retype'
     end
   end
 
@@ -24,4 +25,11 @@ class BookingsController < ApplicationController
     # 完了画面を表示
     render :action => 'thanks'
   end
+
+  def retype
+    # 入力画面を表示
+    @booking = Booking.new
+    render :action => 'retype'
+  end
+
 end
