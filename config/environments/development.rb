@@ -42,8 +42,8 @@ Rails.application.configure do
     :address => "smtp.gmail.com",
     :port => 587,
     :domain => 'smtp.gmail.com',
-    :user_name => "west013minami@gmail.com", #ご自身のgmailアドレス
-    :password => "west2013", #ご自身のgmailアドレスのパスワード
+    :user_name => Settings.email_info[:email], #gmailアドレス
+    :password => Settings.email_info[:password], #gmailアドレスのパスワード
     :authentication => 'login',
   }
   # Raises error for missing translations
