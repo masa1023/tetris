@@ -92,6 +92,7 @@ GEM
     mini_portile2 (2.1.0)
     minitest (5.9.0)
     multi_json (1.12.1)
+    mysql (2.9.1)
     mysql2 (0.3.18)
     nokogiri (1.6.8)
       mini_portile2 (~> 2.1.0)
@@ -185,6 +186,7 @@ DEPENDENCIES
   config
   jbuilder (~> 2.0)
   jquery-rails
+  mysql
   mysql2 (= 0.3.18)
   pry-rails
   rails (= 4.2.6)
