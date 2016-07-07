@@ -3,10 +3,10 @@
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon icon-shield" style="font-size:30px; color:#3498db;"></span>
-          </button>
-          <a class="navbar-brand hidden-xs hidden-sm" href="#home"><span class="icon icon-shield" style="font-size:18px; color:#3498db;"></span></a>
+          <div class="header_icon" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <p class="menu_box"><img src="assets/menu2.png" height="40px" width="40px"></p>
+          </div>
+          <!-- <a class="navbar-brand hidden-xs hidden-sm" href="#home"><span class="icon icon-shield" style="font-size:18px; color:#3498db;"></span></a> -->
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -16,7 +16,7 @@
             <li> <a href="#team" class="smoothScroll"> Team</a></li>
             <li> <a href="#blog" class="smoothScroll"> Reviews</a></li>
             <li> <a href="#access" class="smoothScroll"> Access</a></li>
-            <li> <a href="http://ameblo.jp/takknnjp/entry-12167348798.html" class="smoothScroll" target="_blank"> Blog</a></li>
+            <li> <a href="https://www.facebook.com/TETRISGuestHouseJujo/?fref=ts" class="smoothScroll" target="_blank"> Facebook</a></li>
             <li> <a href="#contact" class="smoothScroll"> Contact</a></li>
         </div><!--/.nav-collapse -->
       </div>
@@ -55,30 +55,14 @@
 			</div><!-- row -->
 		</div><!-- greywrap -->
 
-		<!-- ==== ABOUT ==== -->
-		<div class="container" id="about" name="about">
-			<div class="row white">
-			<br>
-				<h1 class="centered">Our Concept</h1>
-				<hr>
-
-				<div class="col-lg-6">
-					<p>We believe ideas come from everyone, everywhere. In fact, at BlackTie, everyone within our agency walls is a designer in their own right. And there are a few principles we believe—and we believe everyone should believe—about our design craft. These truths drive us, motivate us, and ultimately help us redefine the power of design. We’re big believers in doing right by our neighbors. After all, we grew up in the Twin Cities and we believe this place has much to offer. So we do what we can to support the community we love.</p>
-				</div><!-- col-lg-6 -->
-
-				<div class="col-lg-6">
-					<p>Over the past four years, we’ve provided more than $1 million in combined cash and pro bono support to Way to Grow, an early childhood education and nonprofit organization. Other community giving involvement throughout our agency history includes pro bono work for more than 13 organizations, direct giving, a scholarship program through the Minneapolis College of Art & Design, board memberships, and ongoing participation in the Keystone Club, which gives five percent of our company’s earnings back to the community each year.</p>
-				</div><!-- col-lg-6 -->
-			</div><!-- row -->
-		</div><!-- container -->
-
 		<!-- ==== SECTION DIVIDER1 -->
 		<section class="section-divider textdivider divider1">
 			<div class="container">
-				<h1>DESIGN EXPAND BOUNDARIES</h1>
-				<hr>
-				<p>To achieve real change, we have to expand boundaries. Because the Wild West of what-could-be is unexplored but rife with opportunity.</p>
-			</div><!-- container -->
+  			<h1>Our Concept</h1>
+  			<hr>
+        <p style="font-size:20px;">自分の人生は自分の行動次第。未来は偶然ではなく今の選択の連続によって作られるもの。<br>やりたいことを全部やってみよう。意外な展開を楽しもう。喜びをみんなと共有しよう。<br>人とふれあう。異文化を知る。新しい自分をみつける。そんなキッカケがここにはあふれています。<br>
+        シェアハウスはあなたの可能性を広げる新しいライフスタイルです。 Takeshi</p>
+      </div><!-- container -->
 		</section><!-- section -->
 
 		<!-- ==== TEAM MEMBERS ==== -->
@@ -90,12 +74,12 @@
 				<br>
 				<br>
 				<div class="col-lg-4 centered">
-					<img class="img img-circle" src="assets/takeshi.jpg" height="120px" width="120px" alt="">
+					<img class="img img-circle" src="assets/takeshi2.jpg" height="120px" width="120px" alt="">
 					<br>
 					<h4><b>Takeshi</b></h4>
 					<a href="https://twitter.com/takknnjp" class="icon icon-twitter" target="_blank"></a>
 					<a href="https://www.facebook.com/takknnjp" class="icon icon-facebook" target="_blank"></a>
-					<p>Takeshi combines an expert technical knowledge with a real eye for design. Working with clients from a wide range of industries, he fully understands client objectives when working on a project, large or small.</p>
+					<p>オーナーのタケシです。国境関係なく交流ができて、<br>安心して楽しく暮らせる場が作れたらと思っています。<br>便利な立地とくつろげる環境にきっと気に入って頂けると思います。一緒に暮らせる日を楽しみにしています！</p>
 				</div><!-- col-lg-3 -->
 
 				<div class="col-lg-4 centered">
@@ -104,7 +88,7 @@
 					<h4><b>Masa</b></h4>
 					<a href="https://twitter.com/Masanobu_Minami" class="icon icon-twitter" target="_blank"></a>
 					<a href="https://www.facebook.com/acoustic.jib" class="icon icon-facebook" target="_blank"></a>
-					<p>Masaと呼んでください！<br>このウェブサイト作ったり色々お手伝いしてます。<br>Tetrisはインターナショナルでアットホームで最高です！是非遊びに来てください :)</p>
+					<p>海外とビーチが大好き、マサです！<br>このウェブサイト作ったり色々お手伝いしてます。<br>Tetrisはインターナショナルでアットホームで最高です！毎月パーティーやってるので是非遊びに来てください :)</p>
 				</div><!-- col-lg-3 -->
 
 				<div class="col-lg-4 centered">
@@ -248,12 +232,16 @@
                 <th>性別<span class="text-danger">（必須）</span></th>
                 <td><%= f.select :sex, ['Man', 'Woman', 'Others'], { include_blank: '選択してください'} %></td>
               </tr>
-                <tr>
+              <tr>
                 <th>国籍<span class="text-danger">（必須）</span></th>
                 <td><%= f.text_field :nationality %></td>
               </tr>
               <tr>
-                <th>希望ベッドタイプ</th>
+                <th>宿泊予定人数<span class="text-danger">（必須）</span></th>
+                <td><%= f.number_field :number %></td>
+              </tr>
+              <tr>
+                <th>希望ベッドタイプ<span class="text-danger">（必須）</span></th>
                 <td><%= f.select :bed_type, ['A', 'B', 'C', 'D'], { include_blank: '選択してください'} %></td>
               </tr>
               <tr>

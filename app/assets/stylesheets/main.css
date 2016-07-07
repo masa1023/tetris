@@ -347,10 +347,10 @@ a:after {
 #footerwrap {
 	background: #2b2b2b;
 	margin-top: 0px;
-	padding-top: 30px;
-	padding-bottom: 20px;
+	padding-top: 15px;
 	border-bottom: 1px solid #ddd;
 	text-align: center;
+    height: 70px;
 }
 
 #footerwrap h4 {
@@ -427,7 +427,7 @@ a:after {
 
 .divider3 {
 	background-image: url('divider3.jpg');
-	margin-top: 51px;
+	margin-top: 50px;
 }
 
 .divider4 {

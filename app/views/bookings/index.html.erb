@@ -3,10 +3,10 @@
   <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="icon icon-shield" style="font-size:30px; color:#3498db;"></span>
-        </button>
-        <a class="navbar-brand hidden-xs hidden-sm" href="#home"><span class="icon icon-shield" style="font-size:18px; color:#3498db;"></span></a>
+        <div class="header_icon" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <p class="menu_box"><img src="assets/menu2.png" height="40px" width="40px"></p>
+        </div>
+        <!-- <a class="navbar-brand hidden-xs hidden-sm" href="#home"><span class="icon icon-shield" style="font-size:18px; color:#3498db;"></span></a> -->
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
@@ -16,7 +16,7 @@
           <li> <a href="/#team" class="smoothScroll"> Team</a></li>
           <li> <a href="/#blog" class="smoothScroll"> Reviews</a></li>
           <li> <a href="/#access" class="smoothScroll"> Access</a></li>
-          <li> <a href="http://ameblo.jp/takknnjp/entry-12167348798.html" class="smoothScroll" target="_blank"> Blog</a></li>
+          <li> <a href="https://www.facebook.com/TETRISGuestHouseJujo/?fref=ts" class="smoothScroll" target="_blank"> Facebook</a></li>
           <li> <a href="/#contact" class="smoothScroll"> Contact</a></li>
       </div><!--/.nav-collapse -->
     </div>
@@ -47,9 +47,9 @@
     <div class="col-md-3 ">
         <div class="grid mask">
         <figure>
-          <img class="img-responsive" src="assets/folio01.jpg" alt="">
+          <img class="img-responsive" src="assets/prepare1.png" alt="">
           <figcaption>
-            <h5>DASHBOARD</h5>
+            <h5>Aタイプ</h5>
             <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
           </figcaption><!-- /figcaption -->
         </figure><!-- /figure -->
@@ -60,9 +60,9 @@
     <div class="col-md-3">
         <div class="grid mask">
         <figure>
-          <img class="img-responsive" src="assets/folio02.jpg" alt="">
+          <img class="img-responsive" src="assets/prepare2.png" alt="">
           <figcaption>
-            <h5>UI DESIGN</h5>
+            <h5>Bタイプ</h5>
             <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
           </figcaption><!-- /figcaption -->
         </figure><!-- /figure -->
@@ -73,9 +73,9 @@
     <div class="col-md-3">
         <div class="grid mask">
         <figure>
-          <img class="img-responsive" src="assets/folio03.jpg" alt="">
+          <img class="img-responsive" src="assets/prepare1.png" alt="">
           <figcaption>
-            <h5>ANDROID PAGE</h5>
+            <h5>Cタイプ</h5>
             <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
           </figcaption><!-- /figcaption -->
         </figure><!-- /figure -->
@@ -86,9 +86,9 @@
     <div class="col-md-3 ">
         <div class="grid mask">
         <figure>
-          <img class="img-responsive" src="assets/folio04.jpg" alt="">
+          <img class="img-responsive" src="assets/prepare2.png" alt="">
           <figcaption>
-            <h5>PROFILE</h5>
+            <h5>Dタイプ</h5>
             <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
           </figcaption><!-- /figcaption -->
         </figure><!-- /figure -->
@@ -105,13 +105,13 @@
       <thead>
         <tr>
           <th>部屋タイプ</th>
-          <th>家賃</th>
-          <th>共益費(住人が9人以下の時)</th>
-          <th>共益費(住人が10人以上の時)</th>
-          <th>共益費(住人が20人以上の時)</th>
+          <th>家賃/月</th>
+          <th>共益費<br>(住人が9人以下の時)</th>
+          <th>共益費<br>(住人が10人以上の時)</th>
+          <th>共益費<br>(住人が20人以上の時)</th>
           <th>ベッド数</th>
-          <th>ベッドサイズ</th>
-          <th>収納サイズ</th>
+          <th>ベッドサイズ<br>(縦×横×高さ)</th>
+          <th>収納サイズ<br>(若干ばらつきあり)</th>
         </tr>
       </thead>
       <tbody>
@@ -121,9 +121,9 @@
           <td>9千円</td>
           <td>6千円</td>
           <td>3千円</td>
-          <td>5</td>
-          <td>10</td>
-          <td>10</td>
+          <td>9</td>
+          <td>2m × 1m × 0.9m</td>
+          <td>0.6m × 0.6m × 0.6m</td>
         </tr>
         <tr>
           <td>Bタイプ(男性部屋下段ベッド)</td>
@@ -131,9 +131,9 @@
           <td>9千円</td>
           <td>6千円</td>
           <td>3千円</td>
-          <td>5</td>
-          <td>10</td>
-          <td>10</td>
+          <td>9</td>
+          <td>2m × 1m × 1m</td>
+          <td>2m × 1m × 0.4m</td>
         </tr>
         <tr>
           <td>Cタイプ(女性部屋上段ベッド)</td>
@@ -141,9 +141,9 @@
           <td>9千円</td>
           <td>6千円</td>
           <td>3千円</td>
-          <td>5</td>
-          <td>10</td>
-          <td>10</td>
+          <td>3</td>
+          <td>2m × 1m × 0.9m</td>
+          <td>0.6m × 0.6m × 0.6m</td>
         </tr>
         <tr>
           <td>Dタイプ(女性部屋下段ベッド)</td>
@@ -151,9 +151,9 @@
           <td>9千円</td>
           <td>6千円</td>
           <td>3千円</td>
-          <td>5</td>
-          <td>10</td>
-          <td>10</td>
+          <td>3</td>
+          <td>2m × 1m × 1m</td>
+          <td>2m × 1m × 0.4m</td>
         </tr>
       </tbody>
     </table>
@@ -165,13 +165,11 @@
   <hr>
   <br>
   <div class="responsive-iframe-container big-container">
-    <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showTabs=0&amp;showTz=0&amp;height=600&amp;wkst=2&amp;hl=en&amp;bgcolor=%23FFFFFF&amp;src=u73qtqbh9967uaejcdkn43mu18%40group.calendar.google.com&amp;color=%23853104&amp;src=s7bbs9agktt46nn8v1f58e6bv8%40group.calendar.google.com&amp;color=%232952A3&amp;ctz=Asia%2FTokyo" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no">
-    </iframe>
+    <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showTabs=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=a0rpejg5l1ipi7n4pphd0ijc4k%40group.calendar.google.com&amp;color=%23711616&amp;src=c6ifgvvf298pfqh9lgn8e0rod4%40group.calendar.google.com&amp;color=%23AB8B00&amp;src=elbvlm56912660ub7fj4taq15c%40group.calendar.google.com&amp;color=%232F6309&amp;src=q0e211nbr0gug1mp85a19tqjb4%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=Asia%2FTokyo" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
   </div><!--end of .responsive-iframe-container big-container-->
 
   <div class="responsive-iframe-container small-container">
-    <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showTabs=0&amp;showTz=0&amp;height=600&amp;wkst=2&amp;hl=en&amp;bgcolor=%23FFFFFF&amp;src=u73qtqbh9967uaejcdkn43mu18%40group.calendar.google.com&amp;color=%23853104&amp;src=s7bbs9agktt46nn8v1f58e6bv8%40group.calendar.google.com&amp;color=%232952A3&amp;ctz=Asia%2FTokyo" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no">
-    </iframe>
+    <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showTabs=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=a0rpejg5l1ipi7n4pphd0ijc4k%40group.calendar.google.com&amp;color=%23711616&amp;src=c6ifgvvf298pfqh9lgn8e0rod4%40group.calendar.google.com&amp;color=%23AB8B00&amp;src=elbvlm56912660ub7fj4taq15c%40group.calendar.google.com&amp;color=%232F6309&amp;src=q0e211nbr0gug1mp85a19tqjb4%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=Asia%2FTokyo" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
   </div><!--end of .responsive-iframe-container small-container-->
 </div><!--end of .gc_wrapper-->
 
@@ -212,7 +210,11 @@
         <td><%= f.text_field :nationality %></td>
       </tr>
       <tr>
-        <th>希望ベッドタイプ</th>
+        <th>宿泊予定人数<span class="text-danger">（必須）</span></th>
+        <td><%= f.number_field :number %></td>
+      </tr>
+      <tr>
+        <th>希望ベッドタイプ<span class="text-danger">（必須）</span></th>
         <td><%= f.select :bed_type, ['A', 'B', 'C', 'D'], { include_blank: '選択してください'} %></td>
       </tr>
       <tr>
