@@ -64,8 +64,8 @@
         <td><%= f.number_field :number_of_people %></td>
       </tr>
       <tr>
-        <th>希望ベッドタイプ</th>
-        <td><%= f.text_field :bed_type, :placeholder => "A~Dタイプから選択 " %></td>
+        <th>希望ベッドタイプ<span class="text-danger">（必須）</span></th>
+        <td><%= f.select :bed_type, ['A', 'B', 'C', 'D'], { include_blank: '選択してください'} %></td>
       </tr>
       <tr>
         <th>入居希望日</th>

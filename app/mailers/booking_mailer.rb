@@ -4,6 +4,6 @@ class BookingMailer < ActionMailer::Base
 
   def received_email(booking)
     @booking = booking
-    mail(to: @booking.email, bcc: 'takknnjp@yahoo.co.jp', bcc: 'west013minami@gmail.com', subject: 'お問い合わせを承りました')
+    mail(to: @booking.email, bcc: ["takknnjp@yahoo.co.jp", "west013minami@gmail.com"], subject: 'お問い合わせを承りました')
   end
 end
