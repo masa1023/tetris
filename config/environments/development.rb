@@ -42,9 +42,9 @@ Rails.application.configure do
     :address => "smtp.gmail.com",
     :port => 587,
     :domain => 'smtp.gmail.com',
-    :user_name => Settings.email_info[:email], #gmailアドレス
+    :user_name => Settings.email_info[:my_email], #gmailアドレス
     :password => Settings.email_info[:password], #gmailアドレスのパスワード
-    :authentication => 'login',
+    :authentication => 'login'
   }
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
