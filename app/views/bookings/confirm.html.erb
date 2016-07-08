@@ -68,6 +68,13 @@
           </td>
         </tr>
         <tr>
+          <th>宿泊予定人数</th>
+          <td>
+            <%= f.hidden_field :number_of_people %>
+            <%= @booking.number_of_people %>
+          </td>
+        </tr>
+        <tr>
           <th>希望ベッドタイプ</th>
           <td>
             <%= f.hidden_field :bed_type %>

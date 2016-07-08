@@ -55,9 +55,13 @@
         <th>性別<span class="text-danger">（必須）</span></th>
         <td><%= f.text_field :sex %></td>
       </tr>
-        <tr>
+      <tr>
         <th>国籍<span class="text-danger">（必須）</span></th>
         <td><%= f.text_field :nationality %></td>
+      </tr>
+      <tr>
+        <th>宿泊予定人数<span class="text-danger">（必須）</span></th>
+        <td><%= f.number_field :number_of_people %></td>
       </tr>
       <tr>
         <th>希望ベッドタイプ</th>
