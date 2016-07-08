@@ -211,7 +211,7 @@
       </tr>
       <tr>
         <th>宿泊予定人数<span class="text-danger">（必須）</span></th>
-        <td><%= f.number_field :number_of_people %></td>
+        <td><%= f.number_field :number_of_people, min: 0 %></td>
       </tr>
       <tr>
         <th>希望ベッドタイプ<span class="text-danger">（必須）</span></th>
@@ -222,8 +222,8 @@
         <td><%= f.date_field :checkin_date %></td>
       </tr>
       <tr>
-        <th>予定入居期間</th>
-        <td><%= f.text_field :period %></td>
+        <th>予定入居日数</th>
+        <td><%= f.number_field :period, min: 0 %></td>
       </tr>
       <tr>
         <th>内見希望日時</th>
