@@ -1,5 +1,5 @@
 class BookingMailer < ActionMailer::Base
-  default from: "example@example.com"   # 送信元アドレス
+  default from: "west013minami@gmail.com"   # 送信元アドレス
   default to: "west013minami@gmail.com"     # 送信先アドレス
 
   def received_email(booking)
