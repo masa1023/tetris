@@ -15,11 +15,3 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap
-//= require_tree .
-//= require_interact.js
-//= require_jquery-func.js
-//= require_jquery.easing.1.3.js
-//= require_jquery.min.js
-//= require_modernizr.custom.js
-//= require_retina.js
-//= require_smoothscroll.js
