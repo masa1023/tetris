@@ -1,6 +1,9 @@
 お問い合わせいただきありがとうございました。
 
 --------------------------
+<% if @estimate > 0 %>
+概算お見積もり金額: <%= @estimate %>円
+<% end %>
 Name: <%= @booking.name %>
 Email: <%= @booking.email %>
 年齢: <%= @booking.age %>

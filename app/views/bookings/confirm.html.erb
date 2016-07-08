@@ -32,6 +32,14 @@
 
     <%= form_for @booking, :url => bookings_thanks_path do |f| %>
       <table class="table">
+        <% if @estimate > 0 %>
+          <tr>
+            <th><strong>概算お見積もり金額</strong></th>
+            <td>
+              <%= @estimate %>円
+            </td>
+          </tr>
+        <% end %>
         <tr>
           <th>名前</th>
           <td>
