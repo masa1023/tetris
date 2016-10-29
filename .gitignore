@@ -12,6 +12,4 @@
 !/log/.keep
 /tmp
 
-config/settings.local.yml
-config/settings/*.local.yml
-config/settings/
+/config/settings/

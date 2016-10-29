@@ -8,6 +8,6 @@ class Booking
   validates :age, :presence => {:message => '年齢を入力してください'}
   validates :sex, :presence => {:message => '性別を入力してください'}
   validates :nationality, :presence => {:message => '国籍を入力してください'}
-  validates :number_of_people, :presence => {:message => '宿泊予定人数を入力してください'}
+  validates :number_of_people,numericality: {greater_than_or_equal_to: 1}, :presence => {:message => '宿泊予定人数を入力してください'}
   validates :bed_type, :presence => {:message => '希望ベッドタイプしてください'}
 end
