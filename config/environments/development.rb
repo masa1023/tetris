@@ -42,8 +42,8 @@ Rails.application.configure do
     :address => "smtp.gmail.com",
     :port => 587,
     :domain => 'smtp.gmail.com',
-    :user_name => Settings.email_info[:my_email], #gmailアドレス
-    :password => Settings.email_info[:password], #gmailアドレスのパスワード
+    :user_name => ENV["TETRIS_GMAIL"], #gmailアドレス
+    :password => ENV["TETRIS_GMAIL_PASS"], #gmailアドレスのパスワード
     :authentication => 'login'
   }
   # Raises error for missing translations
