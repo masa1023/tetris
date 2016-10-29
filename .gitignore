@@ -12,7 +12,7 @@
 !/log/.keep
 /tmp
 
-/config/settings*
+/config/settings
 
 # Ignore configurations
 /config/database.yml
