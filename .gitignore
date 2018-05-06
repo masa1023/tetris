@@ -18,6 +18,4 @@ vendor/bundle
 
 # Ignore configurations
 /config/settings
-/config/database.yml
 /config/application.yml
-/config/secrets.yml

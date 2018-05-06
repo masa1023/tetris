@@ -85,8 +85,8 @@ Rails.application.configure do
     :address => "smtp.gmail.com",
     :port => 587,
     :domain => 'smtp.gmail.com',
-    :user_name => ENV["TETRIS_GMAIL"], #gmailアドレス
-    :password => ENV["TETRIS_GMAIL_PASS"], #gmailアドレスのパスワード
+    :user_name => ENV["TETRIS_GMAIL"],
+    :password => ENV["TETRIS_GMAIL_PASS"],
     :authentication => 'login'
   }
 end
